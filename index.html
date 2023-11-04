@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restorant</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <img src="assets/imagenes/logo.png" alt="logo" class="header__logo">
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>   
+        </nav>
+        
+    </header>
+    <main class="main">
+        <div class="comentario">Termino de rendir el 9/11 el ultimo parcial de la facu y despues termino el integrador,
+            perdon por no poder cumplir con el plazo pero ademas tambien trabajo y tengo los tiempos muy justos, ya 
+            despues de la fecha mencionada estaria mas libre ya que no tendria que seguir cursando asi que ahi si me 
+            pongo al dia con este curso (ya sea con el integrador y con js), en estos dias vuelvo a actualizar el repo, 
+            gracias 
+        </div>
+        <div class="hero__container">
+            <section id="hero">
+                <div class="hero__info">
+                    <h1>Al Paso</h1>
+                    <h2>Casa de comidas</h2>
+                    <p><span>"Al Paso"</span>  es una casa de comidas dedicada a la produccion y venta de distintos aperitivos para llevar</p>
+                    <button>¡Ir a la promocion del dia!</button>
+                </div>
+                <!-- <div class="hero__img"> -->
+                    <img src="assets/imagenes/fondohero.png" alt="">
+                <!-- </div> -->
+            </section>   
+        </div>
+        
+        <section id="info">
+            <h2 class="info__tittle">Sobre nosotros</h2>
+            <div class="info__container">
+                <div class="info__card">
+                    <h3>Contacto</h3>
+                    <img src="assets/imagenes/info/directorio.png" alt="">
+                </div>
+                <div class="info__card">
+                    <h3>Ubicacion</h3>
+                    <img src="assets/imagenes/info/marcador.png" alt="">
+                </div>
+                <div class="info__card">
+                    <h3>Delivery</h3>
+                    <img src="assets/imagenes/info/motocicleta.png" alt="">
+                </div>  
+            </div>
+            
+        </section>
+        <section id="promotion">
+            <h2>Promociones del dia</h2>
+            <h3>Aqui encontrarás nuestro platos del dia a los mejores precios!</h3>
+            <div class="promotion__container">
+                <div class="promotion__card">
+                    <img src="" alt="">
+                    <h4>tarta jamon y queso</h4>
+                    <p>$1000</p>
+                </div>
+                <div class="promotion__card">
+                    <img src="" alt="">
+                    <h4>ñoquis</h4>
+                    <p>$1200</p>
+                </div>
+                <div class="promotion__card">
+                    <img src="" alt="">
+                    <h4>tallarines</h4>
+                    <p>$1100</p>
+                </div> 
+            </div>            
+        </section>
+        <section id="menu">
+            <h2>Nuestro Menu</h2>
+            <div class="menu__container">
+                <div class="menu__card">
+                    <img src="" alt="">
+                    <div class="menu__card__info">
+                       <h4>pizzas clasicas</h4>
+                        <p></p> 
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <img src="" alt="">
+                    <div class="menu__card__info">
+                       <h4>milanesas con ensalada</h4>
+                        <p></p> 
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <img src="" alt="">
+                    <div class="menu__card__info">
+                       <h4>Guiso</h4>
+                        <p></p> 
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <img src="" alt="">
+                    <div class="menu__card__info">
+                       <h4>Estofado</h4>
+                        <p></p> 
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <img src="" alt="">
+                    <div class="menu__card__info">
+                       <h4>Hamburguesas</h4>
+                        <p></p> 
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <img src="" alt="">
+                    <div class="menu__card__info">
+                       <h4>Ravioles</h4>
+                        <p></p> 
+                    </div>
+                </div>
+            </div>
+         <button class="menu__btn"> ver mas</button>
+        </section>
+        <section id="contact">
+            <div class="contact__tittles">
+                <h2>Contactanos</h2>
+                <h3>Ingresa tus datos y contactanos para poder realizar tu pedido </h3>  
+            </div> 
+
+            
+                <form action="" class="contact__form">
+                <div class="form__name">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" placeholder="Nico">
+                </div>
+                <div class="form__surmane">
+                    <label for="surname">Apellido:</label>
+                    <input type="text" id="surname" placeholder="Bucarey">  
+                </div>
+                <div class="form__phone">
+                    <label for="phone">Telefono:</label>
+                    <input type="text" id="phone" placeholder="123456789">
+                </div>
+                
+                <div class="form__email">
+                    <label for="email">Correo Electronico:</label>
+                    <input type="email" id="email" placeholder="nico@gmail.com">
+                </div>
+                
+                <div class="form__delivery">
+                    <span>¿Necesita delivery?:</span>
+                    <label for="delivery">Si</label>
+                    <input type="radio" id="si" name="delivery">
+                    <label for="delivery">No</label>
+                    <input type="radio" id="no" name="delivery"> 
+                </div>
+                <div class="form__">
+                    <label for="msj">Mensaje:</label> <br>
+                    <textarea name="msj" id="msj" cols="30" rows="10"></textarea>
+                </div>           
+            </form>    
+        </section>
+        <section id="location">
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
