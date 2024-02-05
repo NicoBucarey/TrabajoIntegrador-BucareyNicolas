@@ -87,30 +87,45 @@
                     <h1>Al Paso</h1>
                     <h2>Casa de comidas</h2>
                     <p><span>"Al Paso"</span>  es una casa de comidas dedicada a la produccion y venta de distintos aperitivos para llevar</p>
-                    <a href="#promotion"><button class="button">¡Ir a la promocion del dia!</button></a>
+                    <div class="hero__buttons">
+                        <a href="#promotion"><button class="button">¡Ir a la promocion del dia!</button></a>
+                        <a href="#menu"><button class="button">Ir al MENU</button></a>
+                    </div>
+                    
                 </div>
                 <!-- <div class="hero__img"> -->
                     <img src="assets/imagenes/fondohero.png" alt="">
                 <!-- </div> -->
             </section>   
         </div>
-        <section id="info">
-            <h2 class="info__tittle">Sobre nosotros</h2>
-            <div class="info__container">
-                <div class="info__card">
-                    <h3>Contacto</h3>
-                    <img src="assets/imagenes/info/directorio.png" alt="">
-                </div>
-                <div class="info__card">
-                    <h3>Ubicacion</h3>
-                    <img src="assets/imagenes/info/marcador.png" alt="">
-                </div>
-                <div class="info__card">
-                    <h3>Delivery</h3>
-                    <img src="assets/imagenes/info/motocicleta.png" alt="">
-                </div>  
-            </div>            
-        </section>
+        <div class="info__font">
+            <section id="info">
+                <h2 class="info__tittle">Sobre nosotros</h2>
+                <div class="info__container">
+                    <a href="#contact">
+                        <div class="info__card">
+                            <h3>Contacto</h3>
+                            <img src="assets/imagenes/info/directorio.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#location">
+                        <div class="info__card">
+                            <h3>Ubicacion</h3>
+                            <img src="assets/imagenes/info/marcador.png" alt="">
+                        </div>   
+                    </a>
+                    <a href="#contact">
+                        <div class="info__card">
+                            <h3>Delivery</h3>
+                            <img src="assets/imagenes/info/motocicleta.png" alt="">
+                        </div>  
+                    </a>
+                    
+                </div>            
+            </section>
+        </div>
+        
+
         <div class="promotion__font">
           <section id="promotion">
             <h2>Promociones del dia</h2>
@@ -146,12 +161,18 @@
                        <h4>Pizzas Clasicas</h4>
                         <p>$8000</p> 
                     </div>
+                    <div class="menu__card__cart">
+                        <img src="assets/imagenes/shoppingcartblack.png" alt="">
+                    </div>
                 </div>
                 <div class="menu__card">
                     <img src="assets/imagenes/menu/milanesa.jpg" alt="">
                     <div class="menu__card__info">
                        <h4>Milanesas con Ensalada</h4>
                         <p>$8000</p> 
+                    </div>
+                    <div class="menu__card__cart">
+                        <img src="assets/imagenes/shoppingcartblack.png" alt="">
                     </div>
                 </div>
                 <div class="menu__card">
@@ -160,12 +181,18 @@
                        <h4>Empanadas</h4>
                         <p>$8000</p> 
                     </div>
+                    <div class="menu__card__cart">
+                        <img src="assets/imagenes/shoppingcartblack.png" alt="">
+                    </div>
                 </div>
                 <div class="menu__card">
                     <img src="assets/imagenes/menu/ñoquis.jpg" alt="">
                     <div class="menu__card__info">
                        <h4>Ñoquis</h4>
                         <p>$8000</p> 
+                    </div>
+                    <div class="menu__card__cart">
+                        <img src="assets/imagenes/shoppingcartblack.png" alt="">
                     </div>
                 </div>
                 <div class="menu__card">
@@ -174,6 +201,9 @@
                        <h4>Hamburguesas</h4>
                         <p>$8000</p> 
                     </div>
+                    <div class="menu__card__cart">
+                        <img src="assets/imagenes/shoppingcartblack.png" alt="">
+                    </div>
                 </div>
                 <div class="menu__card">
                     <img src="assets/imagenes/menu/ravioles.jpg" alt="">
@@ -181,52 +211,61 @@
                        <h4>Ravioles</h4>
                         <p>$8000</p> 
                     </div>
+                    <div class="menu__card__cart">
+                        <img src="assets/imagenes/shoppingcartblack.png" alt="">
+                    </div>
                 </div>
             </div>
             <button class="button"> Ver mas</button>
         </section>  
         </div>
-        
-        <section id="contact">
+       
+        <div class="contact__font">
+           <section id="contact">
             <div class="contact__tittles">
                 <h2>Contactanos</h2>
                 <h3>Ingresa tus datos y contactanos para poder realizar tu pedido </h3>  
             </div> 
 
-            
-            <form action="" class="contact__form">
-                <div class="form name">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" class="input" placeholder="Nico">
-                </div>
-                <div class="form surmane">
-                    <label for="surname">Apellido:</label>
-                    <input type="text" id="surname" class="input" placeholder="Bucarey">  
-                </div>
-                <div class="form phone">
-                    <label for="phone">Telefono:</label>
-                    <input type="text" id="phone" class="input" placeholder="123456789">
-                </div>
+            <table class="table">
+                <form action="" class="contact__form"> 
+                <tr>   
+                    <td class="column1"><label for="name" >Nombre:</label></td>
+                    <td class="column2"><input type="text" id="name" class="input" placeholder="Nico"></td>
+                </tr>
+                <tr>   
+                    <td class="column1"><label for="surname" class="label__input">Apellido:</label></td>
+                    <td class="column2"><input type="text" id="surname" class="input" placeholder="Bucarey"></td>
+                </tr>
+                <tr>   
+                    <td class="column1"><label for="email" class="label__input">Correo Electronico:</label></td>
+                    <td class="column2"><input type="email" id="email" class="input" placeholder="nico@gmail.com"></td>
+                </tr>
+                <tr>   
+                    <td class="column1"><label for="phone" class="label__input">Telefono:</label></td>
+                    <td class="column2"><input type="text" id="phone" class="input" placeholder="123456789"></td>
+                </tr>
                 
-                <div class="form email">
-                    <label for="email">Correo Electronico:</label>
-                    <input type="email" id="email" class="input" placeholder="nico@gmail.com">
-                </div>
-                
-                <div class="form delivery">
-                    <span>¿Necesita delivery?:</span>
-                    <label for="delivery">Si</label>
-                    <input type="radio" id="si" name="delivery">
-                    <label for="delivery">No</label>
-                    <input type="radio" id="no" name="delivery"> 
-                </div>
-                <div class="form msj">
-                    <label for="msj">Mensaje:</label> 
-                    <textarea name="msj" id="msj" class="input" cols="30" rows="10"></textarea>
-                </div>
-                <button class="button">Enviar</button>           
-            </form>    
-        </section>
+                <tr>   
+                    <td><span>¿Necesita delivery?:</span>
+                         </td>
+                        <td>
+                            <label for="delivery">Si</label>
+                        <input type="radio" id="si" name="delivery">
+                        <label for="delivery">No</label>
+                        <input type="radio" id="no" name="delivery"></td>
+                </tr>
+                <tr>   
+                    <td class="column1"><label for="msj" class="label__input">Mensaje:</label></td>
+                    <td class="column2"><textarea name="msj" id="msj" class="input" cols="30" rows="10"></textarea></td>
+                </tr>
+             </form>
+            </table>    
+                <button class="button">Enviar</button>  
+            </section> 
+        </div>
+        
+
         <section id="location">
            <span>  Nuestra ubicacion</span>
            <div class="location__adress"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4387.8218672847115!2d-68.06226488955987!3d-38.954627159619214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1706480460080!5m2!1ses!2sar" width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
@@ -234,7 +273,7 @@
         </section>
     </main>
     <footer>
-
+        <span> Hecho por Nicolas Bucarey</span>
     </footer>
 </body>
 </html>
