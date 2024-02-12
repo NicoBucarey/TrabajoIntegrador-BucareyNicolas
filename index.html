@@ -5,83 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restorant</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/mediaqueries.css">
 </head>
 <body>
     <header class="header">
         <img src="assets/imagenes/logo.png" alt="logo" class="header__logo">
-        <div class="header__content">
-           <nav class="navbar">
-            <ul class="navbar__list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#info">Sobre nosotros</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>   
-        </nav>
-        <label for="cart-toggle" class="cart-label">
-            <img src="assets/imagenes/shoppingCart.png" alt="shoppingCart" class="header__shoppingcart">
-        </label>
-            <input type="checkbox" id="cart-toggle">
-            <div class="cart">
-                <h2>Tus Comidas</h2>
 
-                <div class="cart-item">
-                   <img src="assets/imagenes/menu/pizzas.png" alt="">
-                   <div class="item-info">
-                        <h3>Pizza Clasica</h3>
-                        <p>$6000</p>
-                   </div> 
-                   <div class="item-buttons">
-                        <span class="quantity-handler down">-</span>
-                        <span class="item-quantity">2</span>
-                        <span class="quantity-handler up">+</span>
+        <!-- <div class="header__content"> -->
+           <nav class="navbar">
+                <label for="menu-toggle" class="menu-label">
+                    <img src="assets/imagenes/iconohamburguesa.png" alt="" class="header__menu">
+                </label>   
+                <input type="checkbox" id="menu-toggle">
+
+                <ul class="navbar__list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#info">Sobre nosotros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+                <label for="cart-toggle" class="cart-label">
+                    <img src="assets/imagenes/shoppingCart.png" alt="shoppingCart" class="header__shoppingcart">
+                </label>
+                <input type="checkbox" id="cart-toggle">
+
+                <div class="cart">
+                    <h2>Tus Comidas</h2>
+                    <div class="cart-item">
+                        <img src="assets/imagenes/menu/pizzas.png" alt="">
+                        <div class="item-info">
+                            <h3>Pizza Clasica</h3>
+                            <p>$6000</p>
+                        </div> 
+                        <div class="item-buttons">
+                            <span class="quantity-handler down">-</span>
+                            <span class="item-quantity">2</span>
+                            <span class="quantity-handler up">+</span>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <img src="assets/imagenes/menu/milanesa.jpg" alt="">
+                        <div class="item-info">
+                            <h3>Milanesas</h3>
+                            <p>$6000</p>
+                        </div> 
+                        <div class="item-buttons">
+                            <span class="quantity-handler down">-</span>
+                            <span class="item-quantity">2</span>
+                            <span class="quantity-handler up">+</span>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <img src="assets/imagenes/menu/ravioles.jpg" alt="">
+                        <div class="item-info">
+                            <h3>Ravioles</h3>
+                            <p>$6000</p>
+                        </div> 
+                        <div class="item-buttons">
+                            <span class="quantity-handler down">-</span>
+                            <span class="item-quantity">2</span>
+                            <span class="quantity-handler up">+</span>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <img src="assets/imagenes/menu/hamburguesa.png" alt="">
+                        <div class="item-info">
+                            <h3>Hamburguesa</h3>
+                            <p>$6000</p>
+                        </div> 
+                        <div class="item-buttons">
+                            <span class="quantity-handler down">-</span>
+                            <span class="item-quantity">2</span>
+                            <span class="quantity-handler up">+</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="cart-item">
-                    <img src="assets/imagenes/menu/milanesa.jpg" alt="">
-                    <div class="item-info">
-                         <h3>Milanesas</h3>
-                         <p>$6000</p>
-                    </div> 
-                    <div class="item-buttons">
-                         <span class="quantity-handler down">-</span>
-                         <span class="item-quantity">2</span>
-                         <span class="quantity-handler up">+</span>
-                     </div>
-                 </div>
-
-                 <div class="cart-item">
-                    <img src="assets/imagenes/menu/ravioles.jpg" alt="">
-                    <div class="item-info">
-                         <h3>Ravioles</h3>
-                         <p>$6000</p>
-                    </div> 
-                    <div class="item-buttons">
-                         <span class="quantity-handler down">-</span>
-                         <span class="item-quantity">2</span>
-                         <span class="quantity-handler up">+</span>
-                     </div>
-                 </div>
-
-                 <div class="cart-item">
-                    <img src="assets/imagenes/menu/hamburguesa.png" alt="">
-                    <div class="item-info">
-                         <h3>Hamburguesa</h3>
-                         <p>$6000</p>
-                    </div> 
-                    <div class="item-buttons">
-                         <span class="quantity-handler down">-</span>
-                         <span class="item-quantity">2</span>
-                         <span class="quantity-handler up">+</span>
-                     </div>
-                 </div>
-            </div>
-        </div>
-        
+                <div class="overlay"></div>
+            </nav>    
     </header>
     <main class="main">
         
-        <div class="hero__container">
+        <div class="hero__font">
             <section id="hero">
                 <div class="hero__info">
                     <h1>Al Paso</h1>
@@ -90,12 +96,9 @@
                     <div class="hero__buttons">
                         <a href="#promotion"><button class="button">¡Ir a la promocion del dia!</button></a>
                         <a href="#menu"><button class="button">Ir al MENU</button></a>
-                    </div>
-                    
-                </div>
-                <!-- <div class="hero__img"> -->
-                    <img src="assets/imagenes/fondohero.png" alt="">
-                <!-- </div> -->
+                    </div>                   
+                </div>               
+                <img src="assets/imagenes/fondohero.png" alt="">
             </section>   
         </div>
         <div class="info__font">
@@ -134,7 +137,7 @@
                 <div class="promotion__card">
                     <img src="assets/imagenes/menu/tarta.jpg" alt="">
                     <h4>Tarta jamon y queso</h4>
-                    <p>$1000</p>
+                    <p>$8000</p>
                     
                 </div>
                 <div class="promotion__card">
@@ -249,11 +252,12 @@
                 <tr>   
                     <td><span>¿Necesita delivery?:</span>
                          </td>
-                        <td>
+                        <td class="celda">
                             <label for="delivery">Si</label>
-                        <input type="radio" id="si" name="delivery">
-                        <label for="delivery">No</label>
-                        <input type="radio" id="no" name="delivery"></td>
+                            <input type="radio" id="si" name="delivery">   
+                            <label for="delivery">No</label>
+                            <input type="radio" id="no" name="delivery">
+                        </td>
                 </tr>
                 <tr>   
                     <td class="column1"><label for="msj" class="label__input">Mensaje:</label></td>
