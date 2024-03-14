@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/mediaqueries.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../../#"><img src="../imagenes/logo.png" alt="logo" class="header__logo"></a>
+        <!-- <div class="header__content"> -->
+           <nav class="navbar">
+                <label for="menu-toggle" class="menu-label">
+                    <img src="../imagenes/iconohamburguesa.png" alt="" class="header__menu">
+                </label>   
+                <input type="checkbox" id="menu-toggle">
+
+                <ul class="navbar__list">
+                    <li><a href="../../#">Home</a></li>
+                    <li><a href="../../#info">Sobre nosotros</a></li>
+                    <li><a href="../../#contact">Contacto</a></li>
+                </ul>
+                <label for="cart-toggle" class="cart-label">
+                    <img src="../imagenes/shoppingCart.png" alt="shoppingCart" class="header__shoppingcart">
+                </label>
+                <input type="checkbox" id="cart-toggle">
+
+                <div class="cart">
+                    <h2>Tus Comidas</h2>
+                    <div class="cart-item">
+                        <img src="../imagenes/menu/pizzas.png" alt="">
+                        <div class="item-info">
+                            <h3>Pizza Clasica</h3>
+                            <p>$6000</p>
+                        </div> 
+                        <div class="item-buttons">
+                            <span class="quantity-handler down">-</span>
+                            <span class="item-quantity">2</span>
+                            <span class="quantity-handler up">+</span>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <img src="../imagenes/menu/milanesa.jpg" alt="">
+                        <div class="item-info">
+                            <h3>Milanesas</h3>
+                            <p>$6000</p>
+                        </div> 
+                        <div class="item-buttons">
+                            <span class="quantity-handler down">-</span>
+                            <span class="item-quantity">2</span>
+                            <span class="quantity-handler up">+</span>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <img src="../imagenes/menu/ravioles.jpg" alt="">
+                        <div class="item-info">
+                            <h3>Ravioles</h3>
+                            <p>$6000</p>
+                        </div> 
+                        <div class="item-buttons">
+                            <span class="quantity-handler down">-</span>
+                            <span class="item-quantity">2</span>
+                            <span class="quantity-handler up">+</span>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <img src="../imagenes/menu/hamburguesa.png" alt="">
+                        <div class="item-info">
+                            <h3>Hamburguesa</h3>
+                            <p>$6000</p>
+                        </div> 
+                        <div class="item-buttons">
+                            <span class="quantity-handler down">-</span>
+                            <span class="item-quantity">2</span>
+                            <span class="quantity-handler up">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </nav>    
+    </header>
+    <main>
+        <div class="username__font">
+            <div id="username">
+                <div class="username__tittles">
+                    <h2>Registrarse</h2>
+                </div>
+                <table class="table">
+                    <form action="" class="contact__form"> 
+                        <tr>   
+                            <td class="column1"><label for="name" >Nombre:</label></td>
+                            <td class="column2"><input type="text" id="name" class="input" placeholder="Nico"></td>
+                        </tr>
+                        <tr>   
+                            <td class="column1"><label for="surname" class="label__input">Apellido:</label></td>
+                            <td class="column2"><input type="text" id="surname" class="input" placeholder="Bucarey"></td>
+                        </tr>
+                        <tr>   
+                            <td class="column1"><label for="email" class="label__input">Correo Electronico:</label></td>
+                            <td class="column2"><input type="email" id="email" class="input" placeholder="nico@gmail.com"></td>
+                        </tr>
+                        <tr>   
+                            <td class="column1"><label for="password" class="label__input">Contraseña:</label></td>
+                            <td class="column2"><input type="password" id="password" class="input" placeholder=""></td>
+                        </tr>
+                        <tr>   
+                            <td class="column1"><label for="password" class="label__input">Repetir Contraseña:</label></td>
+                            <td class="column2"><input type="password" id="password" class="input" placeholder=""></td>
+                        </tr>                   
+                    </form>
+                </table>
+                <button class="button">Enviar</button>  
+ 
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span> Hecho por Nicolas Bucarey</span>
+    </footer>
+</body>
+</html>

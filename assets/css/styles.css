@@ -57,7 +57,7 @@ font-size: var(--font-sd);
 z-index: 1;
 }
 .header__logo{
-height: 90%;
+height: 60px;
 width: 100px;
 }
 
@@ -191,9 +191,26 @@ width: 300px;
    #cart-toggle:checked ~ .overlay{
     display: block;
   }
-
+/* -------------------username----------------------- */
+.header__username{
+height: 40px;
+width: 40px;
+}
+.header__username img{
+    height: 40px;
+    width: 40px;
+}
+#username{
+    flex-direction: column;
+    gap: 30px;
+}
+.username__tittles h2{
+    font-size: var(--font-xl);
+    font-weight: var(--font-semibold);
+    text-align: center;
+}
 /* --------------------hero------------------------- */
-#hero{
+#hero, #username{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,7 +223,8 @@ width: 300px;
     /* background-image: url(/assets/imagenes/Pizza-3007395.jpg); */
     /* background-size: cover; */
 }
-.hero__font{
+
+.hero__font, .username__font{
     width: 100%;
     display: flex;
     align-items: center;
@@ -576,7 +594,7 @@ width: 300px;
 }
 /* -------------------------pie-------------------------- */
 footer{
-    height: 70px;
+    height: 50px;
     width: 100%;
     background-color: var(--secondary);
     display: flex;
@@ -584,10 +602,3 @@ footer{
     justify-content: center;
 }
 
-.comentario{
-    position: absolute;
-    top:65px;
-    width: 100%;
-    background-color: red;
-    color: #FFFFFF;
-}
